@@ -1,0 +1,45 @@
+.wrapper {
+  background: #3b4349;
+  border-radius: 16px;
+  padding: 15px;
+  height: auto;
+}
+
+.spaceBetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4px;
+  padding-bottom: 15px;
+}
+.rateWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px dashed rgba(214, 237, 255, 0.08);
+  padding: 10px 0;
+}
+.rate {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #d6edff;
+}
+.rateText {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 117%;
+  color: rgba(206, 232, 255, 0.4);
+}
+
+.skelenton .rate,
+.rateText {
+  background: var(--skelentonColor);
+  color: transparent;
+}

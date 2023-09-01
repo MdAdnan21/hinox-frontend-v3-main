@@ -1,0 +1,29 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: rgba(229, 243, 255, 0.8);
+  gap: 15px;
+  background: rgba(229, 243, 255, 0.1);
+  border-radius: 11px;
+  padding: 5px 14px;
+}
+.count {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  text-align: center;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: rgba(229, 243, 255, 0.8);
+}
+
+.separator {
+  display: flex;
+  font-size: 14px;
+  font-weight: 700;
+  align-items: center;
+  line-height: 100%;
+}

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #121619;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --fontFamily: "Inter", sans-serif;
+  --secondaryFont: "Inter", sans-serif;
+  --chat-bg: #20212e;
+  --sender-msg-bg: linear-gradient(114.79deg, #c040fc -17.76%, #4b3cff 99.88%);
+  --reciver-msg-bg: #434151;
+  --secondary-bg: #30303e;
+  --text-color: #ecddff;
+  --skelentonColor: rgba(214, 237, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
+  margin: 0;
+}
+
+.container {
+  max-width: 1160px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.btn_primary {
+  width: 100%;
+  height: 4.9rem;
+  border-radius: 1rem;
+  background: #1CED86;
+  color: #18332E;
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.6rem;
+  text-transform: capitalize;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn_primary:hover {
+  border-radius: 1rem;
+  background: #C5FFE2;
+}

@@ -1,0 +1,330 @@
+.mainWrapper {
+  background: rgba(214, 237, 255, 0.1);
+  padding: 15px;
+  border-radius: 16px;
+  height: auto;
+}
+
+.wrapper {
+  background: rgba(214, 237, 255, 0.12);
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 15px;
+  padding: 15px;
+}
+
+:root {
+  --pie-width: 30px;
+}
+.overflowHidden {
+  overflow: hidden;
+  font-family: "Inter";
+  padding: 30px 0;
+}
+/* .semiDonut {
+  width: 100%;
+  aspect-ratio: 2;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  border-radius: 150px 150px 0 0;
+  overflow: hidden;
+  color: var(--fill);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.semiDonut:before,
+.semiDonut:after {
+  content: "";
+  width: 100%;
+  aspect-ratio: 2;
+  border: var(--pie-width) solid var(--fill);
+  border-top: none;
+  position: absolute;
+  transform-origin: 50% 0% 0;
+  border-radius: 0 0 300px 300px;
+  box-sizing: border-box;
+  left: 0;
+  top: 100%;
+}
+.semiDonut:before {
+  border-color: var(--dark-2);
+  transform: rotate(180deg);
+}
+.semiDonut:after {
+  z-index: 3;
+  animation: 1s fillGraphAnimation ease-in;
+  transform: rotate(calc(1deg * (var(--percentage) * 1.8)));
+}
+.semiDonut:hover:after {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.semiDonut .semiTxt {
+  font-size: 10px;
+  font-weight: 400;
+  display: block;
+  line-height: 1;
+  color: var(--title);
+} */
+.multiGraph {
+  width: 100%;
+  aspect-ratio: 2;
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  max-width: 244px;
+  margin: 0 auto;
+}
+.multiGraph:before {
+  content: "";
+  width: 100%;
+  aspect-ratio: 2;
+  border: var(--pie-width) solid rgba(0, 0, 0, 0.15);
+  border-bottom: none;
+  position: absolute;
+  box-sizing: border-box;
+  transform-origin: 50% 0%;
+  border-radius: 300px 300px 0 0;
+  left: 0;
+  top: 0;
+}
+.multiGraph .graph {
+  width: 100%;
+  aspect-ratio: 2;
+  border: var(--pie-width) solid var(--fill);
+  border-top: none;
+  position: absolute;
+  transform-origin: 50% 0% 0;
+  border-radius: 0 0 300px 300px;
+  left: 0;
+  top: 100%;
+  z-index: 5;
+  animation: 1s fillGraphAnimation ease-in;
+  transform: rotate(calc(1deg * (var(--percentage) * 1.8)));
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.tooltipContainer {
+  position: relative;
+}
+.toolTip {
+  position: absolute;
+  top: 20px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: #000;
+
+  background: #d6edff;
+  border: 4px solid #2a3035;
+  border-radius: 53px;
+
+  padding: 4px 12px;
+  transform: rotate(calc(-1deg * var(--percentage) * 1.8)) translate(-30px, 0px);
+  transition: 0.2s ease-in;
+  transform-origin: 0 50% 0;
+
+  font-family: var(--secondaryFont);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  z-index: 8;
+}
+
+.multiGraph .graph:after {
+  content: attr(data-name) " " counter(varible) "%";
+  counter-reset: varible var(--percentage);
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: #000;
+  font-weight: 200;
+  font-size: 12px;
+  background: #d6edff;
+  border: 4px solid #2a3035;
+  border-radius: 53px;
+  line-height: 20px;
+  padding: 3px 5px 0;
+  top: 0px;
+  position: absolute;
+  left: 0;
+  transform: rotate(calc(-1deg * var(--percentage) * 1.8)) translate(-30px, 0px);
+  transition: 0.2s ease-in;
+  transform-origin: 0 50% 0;
+  opacity: 0;
+}
+.multiGraph .graph:hover {
+  opacity: 1;
+}
+
+@keyframes fillAnimation {
+  0% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(135deg);
+  }
+}
+@keyframes fillGraphAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+}
+.dognutInnerContent {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: rgba(208, 220, 231, 0.6);
+  width: 65%;
+  max-width: 150px;
+  aspect-ratio: 1;
+  margin: 0 auto;
+  background: #404656;
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 40px;
+}
+.dognutInnerContent h5 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #d0dce7;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+/* .tokenItems {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  row-gap: 30px;
+  column-gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .tokenItems {
+    padding: 10px;
+  }
+}
+.tokenItems .tokenItem {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(rgba(208, 220, 231, 0.8));
+}
+.tokenItems .tokenItem h6 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0;
+}
+@media (max-width: 991px) {
+  .tokenItems .tokenItem {
+    width: calc(50% - 5px);
+    max-width: 160px;
+  }
+} */
+
+/* details */
+.detailsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+.details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(37, 44, 48, 1);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+.bar {
+  width: 10px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(1, 49, 25, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerDot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(1, 49, 25, 0.7);
+  border: 3px solid rgba(1, 49, 25, 0.4);
+  box-shadow: 0px 4px 6px rgba(9, 117, 64, 0.6);
+}
+.keyAndValue {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.key {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  color: rgb(214, 237, 255.5);
+}
+.value {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 120%;
+  color: rgb(214, 237, 255, 0.8);
+}
+.skelenton .dognutInnerContent h5,
+.value,
+.key,
+.keyAndValue,
+.dognutInnerContent h5,
+.toolTip,
+.multiGraph:before,
+.bar {
+  background: var(--skelentonColor);
+  color: transparent;
+}
+@media only screen and (max-width: 520px) {
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}

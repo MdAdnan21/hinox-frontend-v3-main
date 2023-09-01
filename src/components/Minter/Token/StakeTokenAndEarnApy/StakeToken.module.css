@@ -1,0 +1,171 @@
+.mySlide {
+  position: relative;
+  margin-left: -8px;
+  margin-right: -8px;
+  width: 50%;
+}
+
+.arrow_left {
+  width: 5rem;
+  height: 2.8rem;
+  position: absolute;
+  display: flex;
+  top: 50%;
+  left: -2rem;
+  transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.4rem;
+  border: 4px solid #242B33;
+  background: #373F47;
+  z-index: 2;
+}
+
+.cardContainer {
+  padding: 0 8px;
+}
+
+.button {
+  width: 50px;
+  height: 32px;
+  background: #404656;
+  border-radius: 69px;
+  color: #d0dce7;
+  border: 4px solid #242b33;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.button::after {
+  display: none;
+}
+
+.button::before {
+  display: none;
+}
+
+.swiperButtonNext {
+  display: none;
+  right: 0;
+}
+
+.swiperButtonPrev {
+  transform: translate(-50%, -50%);
+}
+
+/* card */
+.card {
+  background: #233F3B;
+  border-radius: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.textContainer {
+  padding: 25px;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-family: var(--fontFamily);
+
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 136%;
+  text-transform: uppercase;
+  color: #e5f3ff;
+  mix-blend-mode: normal;
+}
+
+.title b {
+  font-weight: 800;
+  font-style: italic;
+}
+
+.title p {
+  color: #1ced86;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.tagline {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: uppercase;
+  color: rgba(229, 243, 255, 0.8);
+}
+
+.text {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 183%;
+  text-transform: lowercase;
+  color: rgba(229, 243, 255, 0.4);
+}
+
+.card .image {
+  min-height: 315px;
+}
+
+@media only screen and (max-width: 991px) {
+  .mySlide {
+    max-width: 700px;
+    width: calc(100% - 35px);
+  }
+
+  .swiperButtonNext {
+    display: block;
+    transform: translate(50%, -50%);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .button {
+    font-size: 16px;
+    width: 40px;
+    height: 28px;
+  }
+
+  .card {
+    align-items: flex-start;
+  }
+
+  .textContainer {
+    padding: 15px;
+  }
+
+  .card .image {
+    display: none;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .tagline {
+    text-align: center;
+  }
+
+  .text {
+    text-align: center;
+  }
+}

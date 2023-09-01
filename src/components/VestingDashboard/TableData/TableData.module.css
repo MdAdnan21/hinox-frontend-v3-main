@@ -1,0 +1,196 @@
+.tableHead {
+    height: 6vh;
+}
+
+.displayTable {
+    display: none;
+    transition: 0.5s all;
+}
+
+#up {
+    width: 100% !important;
+    font-size: 12px !important;
+    display: flex;
+    background-color: #242B33 !important;
+    align-items: center;
+    justify-content: end;
+    padding-right: 25px;
+    height: 4vh;
+}
+
+#up i {
+    color: #d0dce7c0;
+    cursor: pointer;
+}
+
+.tableCell {
+    width: 20%;
+    padding-top: 3rem !important;
+    padding-bottom: 1rem !important;
+    font-size: 14px !important;
+    color: #717B85 !important;
+    border-color: #27303A !important;
+}
+
+.tableCell button {
+    padding: 15px 30px;
+    background-color: #97D8DC;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bolder;
+}
+
+.tableL {
+    padding-bottom: 1rem !important;
+    font-size: 12px !important;
+    font-weight: 400;
+    color: #8c9fb1 !important;
+    border-color: #27303A !important;
+}
+
+.tableLists {
+    text-align: center !important;
+}
+
+.claimActive {
+    padding: 8px 40px;
+    background-color: #1CED86;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #0F381D;
+    cursor: pointer;
+}
+
+.claimUnActive {
+    padding: 8px 40px;
+    background-color: #1CED86;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #0F381D;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.claimed {
+    padding: 8px 40px;
+    background-color: #2F393C;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+    color: #62686A;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 991px) {
+    .tableCell button {
+        font-size: 12px;
+        padding: 10px 12px;
+    }
+
+    .claimActive {
+        padding: 8px 30px;
+        font-size: 12px;
+    }
+
+    .claimUnActive {
+        padding: 8px 30px;
+        font-size: 12px;
+    }
+
+    .claimed {
+        padding: 8px 30px;
+        font-size: 12px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .tableCell {
+        font-size: 12px !important;
+    }
+
+    .tableCell button {
+        font-size: 10px;
+        padding: 10px 10px;
+    }
+
+    .tableL {
+        font-size: 11px !important;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .tableCell button {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #up {
+        width: 103.9% !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #up {
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .tableCell {
+        padding: 2px 1px !important;
+    }
+
+    .tableCell button {
+        padding: 8px 3px;
+    }
+
+    .tableL {
+        padding: 8px 0px !important;
+    }
+
+    .claimActive,
+    .claimUnActive,
+    .claimed {
+        padding: 8px 20px;
+        font-size: 12px;
+        font-weight: 300;
+    }
+
+    .tableLists {
+        text-align: left !important;
+    }
+
+    .tableBody {
+        min-width: 0px !important;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .tableL {
+        font-size: 9px !important;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .tableCell {
+        font-size: 10px !important;
+    }
+
+    .tableCell button {
+        font-size: 7px;
+    }
+
+    .tableL {
+        font-size: 7.5px !important;
+    }
+
+    .claimActive,
+    .claimUnActive,
+    .claimed {
+        padding: 5px 15px;
+        font-size: 8px;
+    }
+}

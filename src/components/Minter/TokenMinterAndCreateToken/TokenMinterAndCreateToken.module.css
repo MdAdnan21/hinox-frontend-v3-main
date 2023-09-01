@@ -1,0 +1,25 @@
+.wrapper {
+  padding-top: 150px;
+  padding-bottom: 50px;
+}
+
+.tokenMinterAndCreateToken {
+  display: grid;
+  grid-template-columns: 1fr 620px;
+  gap: 15px;
+}
+@media only screen and (max-width: 1199px) {
+  .tokenMinterAndCreateToken {
+    grid-template-columns: 1fr 1.1fr;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    padding-top: 120px;
+  }
+  .tokenMinterAndCreateToken {
+    grid-template-columns: 1fr;
+    max-width: 550px;
+    margin: 0 auto;
+  }
+}

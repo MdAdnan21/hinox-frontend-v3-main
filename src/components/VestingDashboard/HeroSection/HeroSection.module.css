@@ -1,0 +1,107 @@
+.wrapper {
+  background: url(../../../images/vestingDashboard/heroBg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 140px;
+}
+.heroSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  background: rgba(36, 43, 51, 0.8);
+
+  border-radius: 26px;
+  padding-top: 22px;
+  padding-left: 18px;
+}
+.testimonial {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: capitalize;
+  color: rgba(229, 243, 255, 0.7);
+  border: 1px solid rgba(229, 243, 255, 0.2);
+  border-radius: 16px;
+  display: inline-block;
+  padding: 7px 15px;
+}
+
+.textContainer {
+  max-width: 471px;
+  width: 100%;
+  padding-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 40px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #e6f3ff;
+}
+.bold {
+  font-weight: 700;
+}
+.text {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 200%;
+
+  text-transform: capitalize;
+
+  color: rgba(229, 243, 255, 0.5);
+}
+.imageContainer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+}
+.image {
+  width: 100%;
+  max-width: 457px;
+}
+@media only screen and (max-width: 991px) {
+  .wrapper {
+    padding-top: 100px;
+  }
+  .heroSection {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .textContainer {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .heroSection {
+    padding: 10px;
+    padding-top: 20px;
+    padding-right: 0;
+  }
+  .textContainer {
+    padding-right: 10px;
+  }
+  .title {
+    font-size: 32px;
+  }
+  .testimonial {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .title {
+    font-size: 28px;
+  }
+}

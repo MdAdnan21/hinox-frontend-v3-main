@@ -1,0 +1,180 @@
+.ubsContainer {
+  background: rgba(214, 237, 255, 0.1);
+  border-radius: 22px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: auto;
+}
+.counterText {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 162%;
+  text-align: center;
+  text-transform: capitalize;
+  color: rgba(214, 237, 255, 0.8);
+}
+.topArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  align-items: center;
+}
+.rightSide {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.progressBarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  background: rgba(214, 237, 255, 0.12);
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+.progressBar {
+  display: flex;
+  justify-content: center;
+}
+.box {
+  background: rgba(37, 44, 48, 0.8);
+  border-radius: 10px;
+
+  padding: 8px;
+}
+.projectWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.projectImage {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.valueContainer {
+  padding: 8px;
+  background: rgba(214, 237, 255, 0.16);
+  border-radius: 6px;
+}
+.value {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 120%;
+  text-align: right;
+  color: rgba(214, 237, 255, 0.7);
+}
+.amountTobuyWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.amountToBuy {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 125%;
+  color: rgba(214, 237, 255, 0.8);
+}
+.projectAndValue {
+  padding: 8px;
+  background: rgba(214, 237, 255, 0.16);
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+}
+.testProject {
+  width: 32px;
+}
+.amount {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: #d6edff;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.availableContainer {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.text {
+  color: rgba(214, 237, 255, 0.5);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+
+  color: rgba(214, 237, 255, 0.5);
+}
+.availbleAmount {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 120%;
+
+  color: rgba(28, 237, 134, 0.6);
+}
+.button {
+  padding: 12px 20px;
+  background: #1ced86;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttonText {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 162%;
+  text-transform: capitalize;
+  color: #18332e;
+}
+.skelenton .counterText,
+.projectImage,
+.value,
+.text,
+.availbleAmount,
+.amountToBuy,
+.button {
+  color: transparent;
+  background: var(--skelentonColor);
+  border-radius: 8px;
+}
+.skelenton .buttonText {
+  color: transparent;
+}
+@media only screen and (max-width: 575px) {
+  .topArea {
+    grid-template-columns: 1fr;
+  }
+}

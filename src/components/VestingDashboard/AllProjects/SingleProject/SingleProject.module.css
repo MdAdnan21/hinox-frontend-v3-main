@@ -1,0 +1,193 @@
+.project {
+  background: #242b33;
+  border-radius: 26px;
+  padding: 18px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5px;
+  border-bottom: 1px dashed rgba(229, 243, 255, 0.12);
+  padding-bottom: 20px;
+}
+.logoNameStatus {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.nameAndStatus,
+.remainingTokenAndPrice {
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+}
+.remainingTokenAndPrice {
+  align-items: flex-end;
+}
+.name {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-transform: uppercase;
+  font-feature-settings: "ss03" on;
+  color: rgba(229, 243, 255, 0.9);
+}
+.text {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  font-feature-settings: "ss03" on;
+  color: rgba(229, 243, 255, 0.4);
+}
+.price {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  /* identical to box height, or 26px */
+
+  letter-spacing: 0.01em;
+  font-feature-settings: "ss03" on;
+
+  /* Style */
+
+  text-transform: uppercase;
+}
+.remainingTokenPrice,
+.uncalimableValue,
+.usd {
+  background: linear-gradient(89.56deg, #0fc76c -12.64%, #4cf7a2 129.13%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.tokenPrice {
+  color: rgba(229, 243, 255, 0.6);
+}
+.calimDetails {
+  padding: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.spaceBetween {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.claimOnLogo {
+  width: 20px;
+  height: 20px;
+}
+.claimOnContainer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.calimOn {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: right;
+  letter-spacing: -0.02em;
+  font-feature-settings: "tnum" on, "lnum" on, "ss03" on;
+
+  color: rgba(229, 243, 255, 0.6);
+}
+.countDownContainer,
+.availableTokenContainer {
+  background: rgba(229, 243, 255, 0.1);
+  border-radius: 20px;
+  padding: 18px;
+}
+.countDownContainer {
+  margin-bottom: 18px;
+}
+.countDown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.unlockNext {
+  padding-bottom: 15px;
+  border-bottom: 1px dashed rgba(229, 243, 255, 0.12);
+}
+.vestingEnds {
+  padding-top: 15px;
+}
+.iconAndText {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.icon {
+  width: 18px;
+}
+.countDown .text {
+  font-weight: 500;
+}
+.bnb {
+  font-weight: 700;
+}
+.button {
+  background: rgba(229, 243, 255, 0.2);
+  border-radius: 14px;
+  width: 100%;
+  padding: 14px 15px;
+  text-align: center;
+  cursor: not-allowed;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.button .text {
+  font-weight: 600;
+}
+.activeButton {
+  background: #1ced86;
+  border-radius: 14px;
+  cursor: pointer;
+}
+.activeButton .text {
+  color: #0f381d;
+}
+@media only screen and (max-width: 520px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo {
+    width: 45px;
+    height: 45px;
+  }
+  .remainingTokenAndPrice {
+    width: 100%;
+  }
+  .countDown {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .project {
+    padding: 18px 12px;
+  }
+}

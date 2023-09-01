@@ -1,0 +1,935 @@
+.wrapper {
+  padding: 100px 0;
+}
+
+.titleAndHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 25px;
+  gap: 15px;
+}
+
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  text-transform: capitalize;
+  color: rgba(230, 243, 255, 0.8);
+}
+
+.searchAndFilter {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.searchIcon {
+  color: rgba(229, 243, 255, 0.3);
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  border: 1px solid rgba(229, 243, 255, 0.16);
+  border-radius: 20px;
+  width: 296px;
+}
+
+.input {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: rgba(229, 243, 255, 0.5);
+
+  width: 100%;
+  padding: 8px 10px;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+
+.dropdown {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: relative;
+  border: 1px solid rgba(229, 243, 255, 0.26);
+  border-radius: 20px;
+
+  padding: 7px 15px;
+}
+
+.dropDownItems {
+  position: absolute;
+  z-index: 5;
+  min-width: 100%;
+  top: 50px;
+  right: 0px;
+  background: #242b33;
+  border: 2px solid rgba(229, 243, 255, 0.1);
+  box-shadow: 0px 24px 70px 10px rgba(18, 23, 30, 0.8);
+  border-radius: 20px;
+  padding: 8px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.sortValue {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(229, 243, 255, 0.5);
+  width: 100%;
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.sort {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 143%;
+  color: rgba(229, 243, 255, 0.46);
+  border-right: 1px solid rgba(229, 243, 255, 0.26);
+  padding-right: 12px;
+  display: block;
+}
+
+.sortBy {
+  padding-left: 12px;
+  display: block;
+}
+
+.dropDownItem {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(229, 243, 255, 0.5);
+  width: 100%;
+  padding: 10px 14px;
+}
+
+.dropDownItem:hover {
+  background: #1ced86;
+  border-radius: 16px;
+  color: #0f381d;
+}
+
+.dropDownItems .dropDownItem {
+  padding-right: 20px;
+
+  cursor: pointer;
+}
+
+.arrow {
+  color: rgba(229, 243, 255, 0.36);
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.projects {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.filterIcon {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-top: -2rem;
+}
+
+.filterIcon h4 {
+  width: 87%;
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  text-align: center;
+  color: rgba(229, 243, 255, 0.8);
+}
+
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.names {
+  color: azure;
+}
+
+.dataList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #242B33;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.dropList {
+  width: 100%;
+  margin-top: 10rem;
+  transition: 0.5s all;
+}
+
+.normalList {
+  margin-top: 0rem;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
+  padding: 1.5rem 1rem;
+}
+
+.leftData {
+  width: 50%;
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.leftData img {
+  width: 50px;
+  height: 50px;
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.titleBox h4 {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  /* color: rgba(219, 221, 222, 0.936); */
+  color: #7D8791;
+  font-style: normal;
+  margin-bottom: 0.8rem;
+}
+
+.titleBox p {
+  font-size: 10px;
+  color: #9EA3A8;
+  font-style: initial;
+}
+
+.titleBox p span {
+  font-weight: bold;
+  color: rgba(15, 199, 108, 1);
+}
+
+.border {
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid rgba(76, 96, 121, 1);
+  height: 35px;
+  margin: 6px 0px;
+}
+
+.rightData {
+  width: 50%;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.innerBox {
+  width: 70%;
+  display: flex;
+  background-color: #363E47;
+  border-radius: 10px;
+  padding: 1.5rem 0rem;
+  line-height: 20px;
+}
+
+.prices {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.prices h5 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  color: #9fabb5 !important
+}
+
+.prices p {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: initial;
+  color: #b3b5b7;
+}
+
+.claims {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.claims h4 {
+  font-size: 13px;
+  font-weight: 300;
+  color: #9fabb5 !important
+}
+
+.network {
+  display: flex;
+  align-items: center;
+}
+
+.network img {
+  width: 22px;
+  height: 22px;
+  margin-right: 0.5rem;
+}
+
+.network h3 {
+  font-size: 13px;
+  color: #b3b5b7;
+}
+
+.lower {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border-top: 2px dashed #3C4653;
+  /* background-color: red; */
+}
+
+.tokenBnb {
+  width: 100%;
+  background-color: #3C4653;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.avail h5 {
+  color: #b3b5b7;
+}
+
+.Reserved {
+  display: flex;
+  align-items: center;
+}
+
+.Reserved img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.Reserved h4 {
+  font-size: 12px;
+  font-weight: 500;
+  font-style: initial;
+  color: #9fabb5 !important
+}
+
+.bnb {
+  margin-top: 6px;
+  padding-left: 15px;
+  font-size: 13px;
+  font-weight: 700;
+  font-style: initial;
+  letter-spacing: 1px;
+  color: #b3b5b7;
+}
+
+.bnb span {
+  color: #22D67D;
+}
+
+.buttonBox {
+  width: 30%;
+  margin-left: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttonone {
+  width: 40%;
+  border-radius: 15px;
+  padding: 10px 15px;
+  background-color: #8BA8AA;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #0F1210;
+  text-transform: capitalize;
+}
+
+.buttonsecond {
+  width: 40%;
+  border-radius: 15px;
+  background-color: #1CED86;
+  font-size: 14px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #0F1210;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.innerRight {
+  width: 70%;
+  display: flex;
+  background-color: #47515B;
+  border-radius: 10px;
+  padding: 1rem 0rem;
+  line-height: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.locks {
+  display: flex;
+  align-items: center;
+}
+
+.locks img {
+  margin-right: 10px;
+}
+
+.locks p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #9fabb5 !important
+}
+
+.lockToken h5 {
+  font-size: 13px;
+  font-weight: bolder;
+  font-style: initial;
+  margin-top: 8px;
+  text-align: center;
+  color: #b3b5b7;
+}
+
+.lockToken h5 span {
+  color: #1CD178;
+}
+
+.counting {
+  display: flex;
+  align-items: center;
+}
+
+.counting img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.counting h4 {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  color: #9fabb5 !important
+}
+
+.counts h5 {
+  margin-top: 8px;
+  padding: 1px 1.5px;
+  background-color: #525B64;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+  word-spacing: 8px;
+  color: #b3b5b7;
+
+}
+
+.table {
+  transition: 5s ease-in;
+  display: block;
+}
+
+.tableNo {
+  transition: 5s ease-out;
+  display: none;
+}
+
+.walletBox {
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1200px) {
+  .avail {
+    width: 15%;
+  }
+
+  .buttonBox {
+    width: 35%;
+  }
+
+  .innerRight {
+    width: 72.5%;
+  }
+
+  .dropDownItems {
+    top: 53px;
+  }
+
+  .filterIcon {
+    width: 46%;
+  }
+}
+
+
+@media only screen and (max-width: 1050px) {
+  .avail {
+    width: 17%;
+  }
+
+  .filterIcon {
+    width: 44%;
+  }
+
+  .buttonone {
+    width: 41%;
+  }
+
+}
+
+@media only screen and (max-width: 991px) {
+  .dropdown {
+    width: 100%;
+  }
+
+  .inputContainer {
+    width: 220px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr;
+    max-width: 550px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .bnb {
+    padding-left: 0px !important;
+  }
+
+  .buttonone {
+    padding: 8px 10px;
+  }
+
+  .network h3 {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .searchAndFilter {
+    flex-direction: column-reverse;
+    justify-content: left;
+  }
+
+  .inputContainer {
+    width: 330px;
+  }
+
+  .dropdown {
+    position: absolute;
+    left: 24px;
+    width: 35%;
+  }
+
+  .normalList {
+    margin-top: 5rem !important;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .avail h5 {
+    width: 125px;
+  }
+
+  .innerBox {
+    width: 73%;
+  }
+
+  .locks p {
+    font-size: 13px;
+  }
+
+  .inputContainer {
+    width: 301px;
+  }
+
+  .counting h4 {
+    font-size: 13px;
+  }
+
+  .lockToken h5 {
+    font-size: 12px;
+  }
+
+  .prices p {
+    font-size: 12px;
+  }
+
+  .innerRight {
+    width: 78.5%;
+  }
+
+  .buttonone {
+    width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .dropdown {
+    width: 38% !important;
+    left: 18px;
+  }
+
+
+  .Reserved {
+    width: 124px;
+  }
+
+  .network img {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.2rem;
+  }
+
+  .network h3 {
+    font-size: 9.5px;
+  }
+
+  .prices p {
+    font-size: 10px;
+  }
+
+  .counting img,
+  .locks img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  .locks p,
+  .counting h4 {
+    font-size: 11.5px;
+  }
+
+  .lockToken h5,
+  .avail h5 {
+    font-size: 11px;
+  }
+
+  .counts h5 {
+    font-size: 10px;
+  }
+
+  .buttonone,
+  .buttonsecond {
+    font-size: 13px;
+    font-weight: 600;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .wrapper {
+    padding: 40px 0px;
+  }
+
+  .titleAndHeader {
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .filterIcon {
+    width: 100%;
+    left: 0px;
+    margin-top: 0rem;
+  }
+
+  .filterIcon h4 {
+    width: 100%;
+  }
+
+  .searchAndFilter {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50%;
+  }
+
+  .inputContainer {
+    margin-top: 4.5rem;
+    /* margin-left: 15rem; */
+  }
+
+  .dropdown {
+    width: 42% !important;
+  }
+
+  .normalList {
+    margin-top: 3rem !important;
+  }
+
+
+  .buttonone,
+  .buttonsecond {
+    font-size: 10px;
+  }
+
+  .network h3,
+  .counts h5 {
+    font-size: 8px;
+  }
+
+  .prices p {
+    font-size: 9px;
+  }
+
+  .prices h5,
+  .claims h4,
+  .locks p,
+  .counting h4,
+  .lockToken h5 {
+    font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 650px) {
+  .upper {
+    flex-direction: column;
+  }
+
+  .leftData {
+    width: 100%;
+    margin-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .rightData {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .titleBox p {
+    font-size: 12px;
+  }
+
+  .network h3,
+  .counts h5 {
+    font-size: 14px;
+  }
+
+  .prices p,
+  .Reserved h4 {
+    font-size: 13px;
+  }
+
+  .prices h5,
+  .claims h4,
+  .locks p,
+  .counting h4,
+  .lockToken h5 {
+    font-size: 14px;
+  }
+
+  .network img {
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+  }
+
+  .tokenBnb {
+    flex-direction: column;
+  }
+
+  .avail {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: -28rem;
+  }
+
+  .avail h5 {
+    width: 166px;
+    font-size: 14px;
+    margin-bottom: 1rem;
+  }
+
+  .buttonBox {
+    position: absolute;
+    right: 40px;
+  }
+
+  .buttonone,
+  .buttonsecond {
+    font-size: 13px;
+  }
+
+  .innerRight {
+    margin-top: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .avail {
+    margin-left: -12rem;
+  }
+
+  .buttonone,
+  .buttonsecond {
+    font-size: 11px;
+  }
+
+  .leftData img {
+    width: 44px;
+    height: 44px;
+  }
+}
+
+
+@media screen and (max-width: 500px) {
+  .searchAndFilter {
+    margin-top: -1rem;
+    flex-direction: column-reverse !important;
+  }
+
+  .dropdown {
+    margin-top: 1rem;
+    width: 62% !important;
+    left: 90px;
+  }
+
+  .normalList {
+    margin-top: 5rem !important;
+  }
+
+  .leftData img {
+    width: 42px;
+    height: 42px;
+  }
+
+  .network h3 {
+    font-size: 12px !important;
+  }
+
+  .buttonone,
+  .buttonsecond {
+    font-size: 9px;
+  }
+
+  .TableData_claimUnActive__SP-8- {
+    padding: 6px 19px
+  }
+}
+
+@media screen and (max-width:450px) {
+  .dropdown {
+    width: 76% !important;
+    left: 47px;
+  }
+
+  .titleBox p {
+    font-size: 10px;
+  }
+
+  .network h3,
+  .counts h5 {
+    font-size: 8px !important;
+  }
+
+  .prices p,
+  .Reserved h4 {
+    font-size: 10px;
+  }
+
+  .prices h5,
+  .claims h4,
+  .locks p,
+  .counting h4,
+  .lockToken h5 {
+    font-size: 10px;
+  }
+
+  .network img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .buttonone {
+    font-size: 7px;
+  }
+
+  .TableData_claimUnActive__SP-8- {
+    padding: 13px 23px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dropdown {
+    width: 85% !important;
+    left: 28px;
+  }
+
+  .TableData_claimUnActive__SP-8- {
+    padding: 4px 23px;
+    font-size: 10px;
+  }
+
+}

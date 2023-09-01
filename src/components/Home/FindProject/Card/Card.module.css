@@ -1,0 +1,190 @@
+.card {
+  background: rgba(214, 237, 255, 0.1);
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.topBox {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: rgba(214, 237, 255, 0.1);
+  border-radius: 22px;
+  padding: 15px 12px;
+  padding-top: 18px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.features {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.feature {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  color: #000;
+  opacity: 0.8;
+  padding: 8px 15px;
+  background: #18ed86;
+  border-radius: 10px;
+}
+.status {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: #1ced86;
+  border-radius: 10px;
+  padding: 8px 15px;
+}
+.circle {
+  width: 6px;
+  height: 6px;
+
+  border: 2px solid #18332e;
+  border-radius: 50%;
+}
+.statusText {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #18332e;
+}
+.projectNameImage {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(214, 237, 255, 0.12);
+  border-radius: 16px;
+  padding: 8px;
+}
+.image {
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+}
+.nameAndTagline {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.name {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  text-transform: capitalize;
+  color: rgba(239, 255, 252);
+  opacity: 0.9;
+}
+.tagline {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125%;
+  color: rgba(250, 255, 231);
+  opacity: 0.6;
+}
+.projectInfo {
+  padding: 15px 18px;
+  padding-bottom: 25px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.info {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  color: #effffc;
+  text-align: justify;
+}
+.showMore {
+  cursor: pointer;
+  opacity: 1;
+}
+.softCaps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 20px;
+}
+.softCap {
+  padding: 8px 15px;
+  background: rgba(214, 237, 255, 0.16);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.text {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 117%;
+  color: rgba(239, 255, 252);
+  opacity: 0.8;
+}
+.softCap .text {
+  text-align: center;
+}
+.softCapValue {
+  opacity: 1;
+  color: #8bebda;
+  text-transform: uppercase;
+}
+.progressContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.price {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 117%;
+  color: rgb(239, 255, 252);
+  opacity: 0.6;
+  text-transform: uppercase;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 400px) {
+  .projectInfo {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .topBox {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .softCap {
+    padding: 8px;
+  }
+}

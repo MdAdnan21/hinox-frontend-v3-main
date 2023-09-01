@@ -1,0 +1,88 @@
+.register {
+  display: grid;
+  grid-template-columns: 1fr 356px;
+  gap: 25px;
+  padding: 25px 0;
+}
+.textcontainer {
+  background: #242b33;
+  border-radius: 26px;
+  padding: 20px;
+  padding-right: 45px;
+}
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 175%;
+  text-transform: capitalize;
+  color: #e5f3ff;
+  max-width: 600px;
+  width: 100%;
+}
+.bold {
+  font-weight: 700;
+}
+.nextSales {
+  font-size: 22px;
+  line-height: 100%;
+  color: #1ced86;
+  background: #233f3b;
+  border: 2px solid #1ced86;
+  border-radius: 41px;
+  padding: 4px 30px;
+
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+.arrowContainer {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #1ced86;
+  border-radius: 50%;
+  background: #233f3b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(60%, -50%);
+}
+.arrow {
+  color: #1ced86;
+  font-size: 22px;
+}
+.text {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 200%;
+  text-transform: capitalize;
+  color: rgba(229, 243, 255, 0.6);
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 991px) {
+  .register {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .textcontainer {
+    padding: 16px;
+  }
+  .subsCribeContainer {
+    max-width: 380px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .title {
+    font-size: 30px;
+  }
+}

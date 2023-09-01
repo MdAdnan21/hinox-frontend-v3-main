@@ -1,0 +1,10 @@
+.progressBarText {
+  font-family: var(--secondaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: rgb(214, 237, 255, 0.5);
+}

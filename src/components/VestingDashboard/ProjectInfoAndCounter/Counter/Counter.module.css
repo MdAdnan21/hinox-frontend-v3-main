@@ -1,0 +1,29 @@
+.count {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 30px;
+}
+.countNumber {
+  background: linear-gradient(89.56deg, #0fc76c -12.64%, #4cf7a2 129.13%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.usd {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 100%;
+  color: rgba(229, 243, 255, 0.3);
+}

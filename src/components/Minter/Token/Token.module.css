@@ -1,0 +1,130 @@
+.wrapper {
+  padding: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.tokenContainer {
+  background: #242B33;
+  border-radius: 30px;
+  padding: 25px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 0px;
+  position: relative;
+}
+
+.textContainer {
+  max-width: 468px;
+  width: 100%;
+  padding-left: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.imageContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+.image {
+  position: absolute;
+  top: -30px;
+  height: 130%;
+
+  bottom: 0;
+  right: -25px;
+  width: 100%;
+  display: block;
+  max-width: 499px;
+  z-index: 2;
+}
+
+.title {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 175%;
+  text-transform: capitalize;
+  color: #e5f3ff;
+}
+.bold {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.text {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 200%;
+  text-transform: capitalize;
+  color: rgba(229, 243, 255, 0.6);
+  opacity: 0.5;
+}
+.buttonContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-top: 8px;
+}
+.button {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  text-transform: capitalize;
+  color: #e5f3ff;
+  border: none;
+  outline: none;
+  background: rgba(229, 243, 255, 0.1);
+  border-radius: 20px;
+  padding: 18px 28px;
+  cursor: pointer;
+}
+.activeButton {
+  background: #1ced86;
+
+  color: #0f381d;
+}
+
+@media only screen and (max-width: 991px) {
+  .tokenContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .textContainer {
+    width: 100%;
+    max-width: 100%;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .title {
+    text-align: center;
+  }
+  .text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .title {
+    font-size: 30px;
+  }
+  .text {
+    font-size: 16px;
+  }
+  .button {
+    font-size: 14px;
+    padding: 12px 20px;
+  }
+}

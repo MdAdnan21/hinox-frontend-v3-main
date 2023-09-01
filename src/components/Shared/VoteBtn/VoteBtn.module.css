@@ -1,0 +1,17 @@
+.button {
+    border-radius: 1.5rem;
+    transition: all 0.3s ease;
+    padding: 1.4rem 1.5rem;
+    text-align: center;
+    font-family: Inter;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2.7rem;
+    text-transform: capitalize;
+    min-width: 20rem;
+}
+
+.button:hover {
+    background: #063215 !important;
+    color: #FCFFFE !important;
+}

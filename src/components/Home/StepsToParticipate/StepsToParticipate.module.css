@@ -1,0 +1,86 @@
+.wrapper {
+    padding: 2.5rem 0;
+}
+
+.container>h4 {
+    color: rgba(229, 243, 255, 0.80);
+    font-family: Inter;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.steps {
+    margin-top: 1.9rem;
+    display: flex;
+    align-items: center;
+    grid-gap: 3rem;
+    justify-content: space-between;
+}
+
+.steps_wrapper {
+    max-width: 25rem;
+    height: 26.1rem;
+    position: relative;
+    padding: 1.1rem;
+    justify-content: space-between;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 4px 4px rgba(9, 255, 33, 0.25);
+}
+
+.background {
+    /* filter: drop-shadow(0px 4px 4px rgba(9, 255, 33, 0.25)); */
+    background: var(--greenblack, linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), linear-gradient(180deg, rgba(12, 175, 96, 0.50) 0%, rgba(22, 29, 38, 0.00) 100%));
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 2rem;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.steps_wrapper>p {
+    color: rgba(229, 243, 255, 0.80);
+    font-family: Inter;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.header {
+    display: flex;
+    grid-gap: 2.4rem;
+}
+
+.header>h3 {
+    background: #242B33;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    color: #FFF;
+    font-size: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.steps_wrapper > button {
+    z-index: 2;
+}
+
+.icons > img {
+    width: 9rem;
+    height: 9rem;
+}

@@ -1,0 +1,118 @@
+.subscribe {
+  width: calc(100% - 5px);
+  background: #242b33;
+  border-radius: 26px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding-bottom: 0;
+}
+
+.subscribe {
+  position: relative;
+}
+
+.subscribe::before {
+  content: "";
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  border-radius: 26px;
+  background: linear-gradient(132deg, #ffb36a, #ba1ef7 43%, #35d1d2);
+  position: absolute;
+  z-index: -1;
+  top: -2.5px;
+
+  left: -2.5px;
+
+  animation: spin 5s ease infinite;
+}
+.subscribe::after {
+  content: "";
+  background: #35d1d2;
+  filter: blur(72.2727px);
+}
+@keyframes spin {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.searchIcon {
+  color: rgba(229, 243, 255, 0.3);
+  font-size: 18px;
+  margin-top: 2px;
+}
+.inputWrapper {
+  width: 100%;
+}
+.label {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 160%;
+  color: rgba(229, 243, 255, 0.4);
+  padding: 0px 8px;
+  padding-bottom: 5px;
+  display: block;
+}
+
+.inputContainer {
+  display: flex;
+  align-items: center;
+
+  padding: 5px 15px;
+  background: rgba(229, 243, 255, 0.1);
+  border-radius: 20px;
+
+  width: 100%;
+}
+.input {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  color: rgba(229, 243, 255, 0.5);
+
+  width: 100%;
+  padding: 8px 10px;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.button {
+  font-family: var(--fontFamily);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  text-transform: capitalize;
+  color: #0f381d;
+  width: 100%;
+  padding: 12px 10px;
+  text-align: center;
+  background: #1ced86;
+  border-radius: 14px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+@media only screen and (max-width: 991px) {
+  .subscribe {
+    width: 100%;
+    max-width: 400px;
+  }
+}
