@@ -1711,6 +1711,9 @@ const AllProject = () => {
     }
   }
 
+
+  
+
   const getHTEPrice = async () => {
     let url = "https://api.coingecko.com/api/v3/simple/price?ids=hepton&vs_currencies=usd"
     const res = await fetch(url)
